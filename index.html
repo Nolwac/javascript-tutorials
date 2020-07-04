@@ -13,20 +13,16 @@
 	<body>
 		<h1>This is a hello world page</h1>
 		<script type="text/javascript">
-			//this is a comment
-			/*
-			every thing inside here are all comments and not going to be executede by the browser
-			*/
-			var $name, age, height, Height;
-			$name = "Nwafor Livinus Anao";
-			age = 45;
-			Height = 56;//this is the height value
-			height = 23.5;
-			var firstName = 30;
-			console.log(firstName);
-			console.log("Nwafor Livinus Anayo is the programmer here");
-			console.log($name, age, height);
-			console.log(Height);
+		var person = {
+		  country: "Nigeria",
+		  eyeBallColor:"black",
+		  interest:"Proogramming"
+		}
+		console.log(person.country);
+		console.log(person["eyeBallColor"]);
+		console.log(person);
+		person.name = "Nwafor Livinus Anayo";
+		console.log(person.name, " is the name property");
 		</script>
 	</body>
 </html>
