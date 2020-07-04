@@ -13,17 +13,26 @@
 	<body>
 		<h1>This is a hello world page</h1>
 		<script type="text/javascript">
-		var list = [
-		  'livinus', 17, 20, 'prime'
+		var data = {
+		  names:['Vitor', 'Favor', 'Nweke', 'Akpan'],
+		  ages: [21, 22, 19, 20],
+		  scores: [57, 90, 63, 79]
+		}
+		var record1Name = data.names[1];
+		document.write(record1Name);
+		var record1Age = data.ages[1];
+		document.write(record1Age);
+		var record1score = data.scores[1];
+		document.write(record1score);
+		var data2 = [
+		  {name:'Victor', age:21, score:57},
+		  {name:'Favor', age:22, score:90},
+		  {name:'Nweke', age:19, score:63},
+		  {name:'Akpan', age:20, score:79}
 		  ];
-		var second = list[1];
-		document.write(second);
-		list[4] = 45;
-		list[2] = 100;
-		var array2 = [
-		  [1, 2, 3, 4], 'prince'];
-		console.log(list);
-		console.log(array2);
+		  var record3 = data2[2];
+		  console.log(record3);
+		
 		</script>
 	</body>
 </html>
