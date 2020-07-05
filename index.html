@@ -13,11 +13,12 @@
 	<body>
 		<h1>This is a hello world page</h1>
 		<script type="text/javascript">
-		var logic = 5 < 2 ;// false
+		var logic = 5 > 2 ;// true
 		var logic2 = 6 > 1;// true
-		var result = logic || logic2;//false or true =  true
+	  var logic3 = (true && false) != false;//false
+		var result = !(logic || logic2) && logic2;//false
 		var result2 = !logic2;//false
-		document.write(result2);
+		document.write(result);
 		</script>
 	</body>
 </html>
