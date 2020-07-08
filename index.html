@@ -14,19 +14,16 @@
 		<h1>This is a hello world page</h1>
 		<script type="text/javascript">
 		var name = window.prompt("please put your name: ");
-		if(name=="prime"){
-		  window.alert("You are in welcome");
-		  var interest = window.prompt("What is your interest: ");
-		  if(interest=="astronomy"){
-		    window.alert("You are most welcome");
-		  }else{
-		    window.alert("You are welcome but you don't have your place among geniuses");
-		  }
-		}else{
-		  window.alert("You are out, get out of here");
-		  if(name=="livinus"){
-		    window.alert("You are good but not too good, so you can't go in");
-		  }
+		switch(name){
+		  case 'livinus':
+		    window.alert("You are welcome astronomer");
+		    break
+		  case 'prime':
+		    window.alert("You are welcome but not always");
+		    break;
+		  default:
+		    window.alert("You are out, get out of here");
+		    
 		}
 		</script>
 	</body>
