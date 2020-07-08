@@ -13,30 +13,11 @@
 	<body>
 		<h1>This is a hello world page</h1>
 		<script type="text/javascript">
-		var name = window.prompt("please put your name: ");
-		var interest = window.prompt("what do you like");
-		switch(name){
-		  case 'livinus':
-		    window.alert("You are welcome astronomer");
-		    switch(interest){
-		      case "math":
-		        window.alert("You are a genius astronomer");
-		        break;
-		      case 'physics':
-		        window.alert("You are agood astronomer");
-		        break;
-		      default:
-		        window.alert("You are good but not too good");
-		        break;
-		    }
-		    break;
-		  case 'prime':
-		    window.alert("You are welcome but not always");
-		    break;
-		  default:
-		    window.alert("You are out, get out of here");
-		    
+		//var name = window.prompt("please put your name: ");
+		while(window.prompt("please put your name: ") != 'livinus'){
+		  alert('put the correct name');
 		}
+		
 		</script>
 	</body>
 </html>
