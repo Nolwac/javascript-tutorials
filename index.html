@@ -13,16 +13,10 @@
 	<body>
 		<h1>This is a hello world page</h1>
 		<script type="text/javascript">
-		var num = 1;
-		
-		while(num <= 12){
-		  var multiplier = 1;
-  		while(multiplier<=10){
-  		  document.write(num*multiplier+"  ");
-  		  multiplier++;
-  		}
-  		document.write("<br>");
-  		num++;
+		var students = ["prime", "victor", "prince", 'Malachi'];
+		for(var i = 0; i<students.length; i++){
+		  var name = students[i];
+		  document.write(name+"    ");
 		}
 		</script>
 	</body>
