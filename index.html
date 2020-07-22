@@ -13,10 +13,13 @@
 	<body>
 		<h1>This is a hello world page</h1>
 		<script type="text/javascript">
-		//var name = window.prompt("please put your name: ");
-		while(window.prompt("please put your name: ") != 'livinus'){
-		  alert('put the correct name');
+		var interest = window.prompt("please put your interest: ");
+		var name;
+		do{
+		  alert("You are welcome, put a correct name");
+		  name = window.prompt("please put your name: ");
 		}
+		while(name != "livinus");
 		
 		</script>
 	</body>
