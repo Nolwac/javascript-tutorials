@@ -13,9 +13,13 @@
 	<body>
 		<h1>This is a hello world page</h1>
 		<script type="text/javascript">
-		var students = ["prime", "victor", "prince", 'Malachi'];
-		for(nm of students){
-		  document.write(nm+"    ");
+		var students ={
+		  names: ["prime", "victor", "prince", 'Malachi'],
+		  scores: [50, 60, 80, 70]
+		};
+		for(s in students){
+		  var student = students[s];
+		  document.write(student[1]+"    ");
 		}
 		</script>
 	</body>
