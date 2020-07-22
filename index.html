@@ -19,7 +19,10 @@
 		};
 		for(s in students){
 		  var student = students[s];
-		  document.write(student[1]+"    ");
+		  for(name of student){
+		    document.write(name+"    ");
+		  }
+		  document.write("<br>");
 		}
 		</script>
 	</body>
