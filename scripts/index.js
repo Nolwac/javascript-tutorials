@@ -1,11 +1,17 @@
-var students ={
-  names: ["prime", "victor", "prince", 'Malachi'],
-  scores: [50, 60, 80, 70]
-};
-for(s in students){
-  var student = students[s];
-  for(name of student){
-    document.write(name+"    ");
+
+var template = {
+  hello:["HI", "How are you doing", "I am good"],
+  name:["I am Jarvis", "I am iron man"]
+}
+
+var message;
+while(message != 'bye'){
+  message = prompt("type your message:");
+  for(temp in template){
+    var check = message.includes(temp);
+    if(check===true){
+      var m = template[temp];
+      alert(m[1]);
+    }
   }
-  document.write("<br>");
 }
