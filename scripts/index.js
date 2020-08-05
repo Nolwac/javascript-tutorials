@@ -1,7 +1,12 @@
 
-function chatbot(){
+function chatbot(name, creator){
   var template = ['how are you', 'hello', 'your name', 'who created you'];
-  var response = ['I am fine, what of you', 'hi, how are you doing', 'My name is Jarvis, how may I help you',  'I was created by nwafor']
+  var response = [
+    'I am fine, what of you', 
+    'hi, how are you doing', 
+    'My name is ' + name + ', how may I help you',  
+    'I was created by '+creator
+    ];
   
   var message;
   while(message != 'bye'){
@@ -15,5 +20,5 @@ function chatbot(){
     }
   }
 }
-chatbot();
-chatbot();
+chatbot("Jarvis", "Nwafor");
+chatbot("Alexa", "Iron man");
