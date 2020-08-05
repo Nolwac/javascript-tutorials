@@ -22,6 +22,14 @@ function chatbot(name, creator="Google"){
   var returnMessage = "this is "+name+" by "+creator;
   return returnMessage
 }
-var chat = chatbot("Jarvis");
-var chat2 = chatbot("Alexa", "Iron man");
-document.write(chat +"     "+ chat2);
+
+function factorial(n){
+  // 5! = 1*2*3*4*5 = n*(n-1)!
+  if(n > 1){
+    return n*factorial(n-1);
+  }else{
+    return 1;
+  }
+}
+
+document.write(factorial(5));
