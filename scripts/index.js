@@ -23,13 +23,17 @@ function chatbot(name, creator="Google"){
   return returnMessage
 }
 
-function factorial(n){
-  // 5! = 1*2*3*4*5 = n*(n-1)!
-  if(n > 1){
-    return n*factorial(n-1);
-  }else{
-    return 1;
-  }
-}
 
-document.write(factorial(5));
+function printSomething(interest){
+  function inner(programmer){
+    document.write(programmer + " is the programmer and is interested in " + interest+"<br>");
+  }
+  return inner;
+}
+var call = printSomething("Programming");
+var call2  = printSomething("Mathematics")
+
+call("Nwafor");
+call("bishop");
+call2("Nwafor");
+call2("bishop");
