@@ -1,5 +1,5 @@
 
-function chatbot(name, creator){
+function chatbot(name, creator="Google"){
   var template = ['how are you', 'hello', 'your name', 'who created you'];
   var response = [
     'I am fine, what of you', 
@@ -19,6 +19,9 @@ function chatbot(name, creator){
       }
     }
   }
+  var returnMessage = "this is "+name+" by "+creator;
+  return returnMessage
 }
-chatbot("Jarvis", "Nwafor");
-chatbot("Alexa", "Iron man");
+var chat = chatbot("Jarvis");
+var chat2 = chatbot("Alexa", "Iron man");
+document.write(chat +"     "+ chat2);
