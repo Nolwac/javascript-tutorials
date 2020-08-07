@@ -23,23 +23,14 @@ function chatbot(name, creator="Google"){
   return returnMessage
 }
 
-var array1 = ["prime", "livinus", "henry", "jude"];
-var array2 = ["jacob", "williams", "prince"];
-var array4 = [300, 4,1,6,20,9];
-var check = array1.includes("Jude");
-function inc(item){
-  if(item.includes("e")){
-    return item;
-  }else{
-    return "missing"
+var person = {
+  name:"Nwafor",
+  program:function(){
+    document.write("I am now programming");
   }
 }
-
-function finder(item){
-  return item.includes("n");
+person.program();
+person.print = function(string){
+  document.write(string);
 }
-var check2 = array1.map(inc);
-var found  = array1.find(finder);
-var str = array2.toString();
-var str2 = array2.join("***----");
-document.write(str2);
+person.print("I am now programming again and it is being very sweet");
