@@ -45,13 +45,13 @@ function Person(name, height){
     }
   }
 }
-
+function Child(name, height){
+  this.cry = function(){
+    document.write("child is crying");
+  }
+  Person.call(this);
+}
 var person1 = new Person("Nwafor", 12);
-var person2 = new Person("Prime", 15);
-var person3 = new Person("Sandra", 11);
-person1.age = 35;
-person1.saySomething("I am the person one");
-person2.saySomething(" I am the person two")
-document.write("<br>");
-person3.sayName();
-person1.printStatus();
+var person2 = new Child("Sandra", 9);
+person2.cry();
+person2.saySomething(" I am a child and also a person");
