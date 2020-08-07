@@ -23,12 +23,15 @@ function chatbot(name, creator="Google"){
   return returnMessage
 }
 
-var str1 = "this is the way of strings";
-var str2 = " this is the second way";
-var str3 = str1.endsWith("ings");
-var str4 = str2.startsWith(" tr");
-var str5 = str2.includes("way");
-var str6 = str1.indexOf(' is');
-var str7 = str1.replace("is", "esis");
+var str1 = "This is The wAy of strings";
+var str2 = " this is the second way   ";
+var str3 = str1.slice(8, 15);
+var arr = str1.split(" ");
 
-document.write(str1)
+var str5 = str2.substr(8, 10);
+var str6 = str1.substring(8, 10);
+var str7 = str1.toUpperCase();
+var str8 = str1.toLowerCase();
+var str9 = str1.trim();
+console.log(str9);
+document.write(str8);
