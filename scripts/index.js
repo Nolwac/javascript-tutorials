@@ -29,4 +29,8 @@ function Person(name, height){
 }
 
 var person1 = new Person("Nwafor", 12);
-console.log(person1);
+var person2 = new Person("Prime", 15);
+var person3 = new Person("Sandra", 11);
+person1.age = 35;
+document.write(person1.age + " is the age of person one");
+document.write(person2.age);
