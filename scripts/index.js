@@ -25,13 +25,9 @@ function chatbot(name, creator="Google"){
 
 var array1 = ["prime", "livinus", "henry", "jude"];
 var array2 = ["jacob", "williams", "prince"];
-//concat
-array2.push("other friends");
-document.write(array1.shift());
-array1.unshift("Nolwac");
-document.write(array1.pop());
-var joined = array1.concat(array2);
-document.write(array1 + "<br>" + array2 + "<br>");
-document.write(joined +"<br>");
-var index = array1.indexOf("livinus");
-document.write(index)
+var array4 = [300, 4,1,6,20,9];
+var array3 = array2.reverse()
+var array5 = array4.sort(function(a, b){
+  return b - a;
+});
+document.write(array3);
