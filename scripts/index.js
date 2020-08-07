@@ -23,17 +23,15 @@ function chatbot(name, creator="Google"){
   return returnMessage
 }
 
-
-function printSomething(interest){
-  function inner(programmer){
-    document.write(programmer + " is the programmer and is interested in " + interest+"<br>");
-  }
-  return inner;
-}
-var call = printSomething("Programming");
-var call2  = printSomething("Mathematics")
-
-call("Nwafor");
-call("bishop");
-call2("Nwafor");
-call2("bishop");
+var array1 = ["prime", "livinus", "henry", "jude"];
+var array2 = ["jacob", "williams", "prince"];
+//concat
+array2.push("other friends");
+document.write(array1.shift());
+array1.unshift("Nolwac");
+document.write(array1.pop());
+var joined = array1.concat(array2);
+document.write(array1 + "<br>" + array2 + "<br>");
+document.write(joined +"<br>");
+var index = array1.indexOf("livinus");
+document.write(index)
