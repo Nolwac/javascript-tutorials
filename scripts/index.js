@@ -23,14 +23,12 @@ function chatbot(name, creator="Google"){
   return returnMessage
 }
 
-var person = {
-  name:"Nwafor",
-  program:function(){
-    document.write("I am now programming");
-  }
-}
-person.program();
-person.print = function(string){
-  document.write(string);
-}
-person.print("I am now programming again and it is being very sweet");
+var str1 = "this is the way of strings";
+var str2 = " this is the second way";
+var str3 = str1.endsWith("ings");
+var str4 = str2.startsWith(" tr");
+var str5 = str2.includes("way");
+var str6 = str1.indexOf(' is');
+var str7 = str1.replace("is", "esis");
+
+document.write(str1)
