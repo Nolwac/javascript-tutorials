@@ -26,11 +26,23 @@ function chatbot(name, creator="Google"){
 function Person(name, height){
   this.name = name;
   this.height = height;
+  var friends = ['livinus', 'prime'];
   this.saySomething = function(something){
     document.write(something);
   }
   this.sayName = function(){
     document.write(this.name);
+  }
+  this.printStatus = function(){
+    var checker = checkName(this.name);
+    document.write(checker + " " + friends);
+  }
+  var checkName = function(check){
+    if(name == check){
+      return true;
+    }else{
+      return false
+    }
   }
 }
 
@@ -42,3 +54,4 @@ person1.saySomething("I am the person one");
 person2.saySomething(" I am the person two")
 document.write("<br>");
 person3.sayName();
+person1.printStatus();
