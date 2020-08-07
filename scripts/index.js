@@ -26,8 +26,6 @@ function chatbot(name, creator="Google"){
 var array1 = ["prime", "livinus", "henry", "jude"];
 var array2 = ["jacob", "williams", "prince"];
 var array4 = [300, 4,1,6,20,9];
-var array3 = array2.reverse()
-var array5 = array4.sort(function(a, b){
-  return b - a;
-});
-document.write(array3);
+var array3 = array1.splice(2, 2, "Victor", "julius");
+var array5 = array2.slice(0, 2);
+document.write(array5);
