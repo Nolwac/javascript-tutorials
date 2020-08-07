@@ -23,15 +23,10 @@ function chatbot(name, creator="Google"){
   return returnMessage
 }
 
-var str1 = "This is The wAy of strings";
-var str2 = " this is the second way   ";
-var str3 = str1.slice(8, 15);
-var arr = str1.split(" ");
+function Person(name, height){
+  this.name = name;
+  this.height = height;
+}
 
-var str5 = str2.substr(8, 10);
-var str6 = str1.substring(8, 10);
-var str7 = str1.toUpperCase();
-var str8 = str1.toLowerCase();
-var str9 = str1.trim();
-console.log(str9);
-document.write(str8);
+var person1 = new Person("Nwafor", 12);
+console.log(person1);
