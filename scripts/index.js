@@ -29,23 +29,12 @@ function Chatbot(name, creator="Google"){
 
 var chat1 = new Chatbot('Jarvis', 'Iron man');
 
-function area(length, width){
-  try{
-    if(typeof(length) != "number" || typeof(width) != "number"){
-      throw {
-        name:"inputError",
-        message:"thi is not a number, input a number"
-      };
-    }
-  }
-  catch(error){
-    document.write(error.name + " : " + error.message + "<br> input a number");
-  }
-  finally{
-    document.write("<br> the area of the rectangle is:");
-    return length * width;
-  }
-}
-
-var area1 = area("six", 8);
-document.write(area1);
+var datetime = new Date();
+var datetime2 = new Date(2018, 2, 14, 23, 55, 33);
+var currentDay = datetime.getDay();
+var currentMonth = datetime.getMonth();
+var currentHour = datetime.getHours();
+datetime2.setMonth(5);
+console.log(datetime);
+document.write(datetime2 + "<br>");
+document.write(currentHour);
