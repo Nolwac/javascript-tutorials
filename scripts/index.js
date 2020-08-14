@@ -29,8 +29,13 @@ function Chatbot(name, creator="Google"){
 
 var chat1 = new Chatbot('Jarvis', 'Iron man');
 
-var parent = document.getElementById('upper');
+var div = document.getElementById('upper');
 var elem = document.createElement('div');
 elem.innerHTML = "This is a new html div element";
-parent.appendChild(elem);
-document.body.removeChild(parent);
+div.appendChild(elem);
+//document.body.removeChild(parent);
+var body = div.parentElement;
+body.style.backgroundColor = 'orange';
+var children = body.children;
+console.log(children);
+children[0].style.color = 'green';
