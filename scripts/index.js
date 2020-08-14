@@ -29,12 +29,14 @@ function Chatbot(name, creator="Google"){
 
 var chat1 = new Chatbot('Jarvis', 'Iron man');
 
-var datetime = new Date();
-var datetime2 = new Date(2018, 2, 14, 23, 55, 33);
-var currentDay = datetime.getDay();
-var currentMonth = datetime.getMonth();
-var currentHour = datetime.getHours();
-datetime2.setMonth(5);
-console.log(datetime);
-document.write(datetime2 + "<br>");
-document.write(currentHour);
+var num = 0;
+function printText(){
+  num++;
+  document.write("hello world" + num + "<br>");
+  
+  if(num>=12){
+    window.clearInterval(timer);
+  }
+  
+}
+var timer = window.setInterval(printText, 1000);
