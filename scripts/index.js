@@ -30,12 +30,11 @@ function Chatbot(name, creator="Google"){
 var chat1 = new Chatbot('Jarvis', 'Iron man');
 
 var div = document.getElementById('upper');
-var elem = document.createElement('div');
-elem.innerHTML = "This is a new html div element";
-div.appendChild(elem);
-//document.body.removeChild(parent);
-var body = div.parentElement;
-body.style.backgroundColor = 'orange';
-var children = body.children;
-console.log(children);
-children[0].style.color = 'green';
+div.style.width = "50px";
+div.style.height = "50px";
+document.write(div.classList);
+
+
+setInterval(function(){
+  div.classList.toggle('green-color');
+}, 100);
