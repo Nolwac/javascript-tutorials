@@ -28,5 +28,24 @@ function Chatbot(name, creator="Google"){
 }
 
 var chat1 = new Chatbot('Jarvis', 'Iron man');
-//chat1.start();
-document.write(chat1.creator);
+
+function area(length, width){
+  try{
+    if(typeof(length) != "number" || typeof(width) != "number"){
+      throw {
+        name:"inputError",
+        message:"thi is not a number, input a number"
+      };
+    }
+  }
+  catch(error){
+    document.write(error.name + " : " + error.message + "<br> input a number");
+  }
+  finally{
+    document.write("<br> the area of the rectangle is:");
+    return length * width;
+  }
+}
+
+var area1 = area("six", 8);
+document.write(area1);
