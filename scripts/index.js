@@ -1,57 +1,32 @@
 
-function chatbot(name, creator="Google"){
-  var template = ['how are you', 'hello', 'your name', 'who created you'];
-  var response = [
+function Chatbot(name, creator="Google"){
+  this.name = name;
+  this.creator = creator;
+  this.template = ['how are you', 'hello', 'your name', 'who created you'];
+  this.responses = [
     'I am fine, what of you', 
     'hi, how are you doing', 
     'My name is ' + name + ', how may I help you',  
     'I was created by '+creator
     ];
   
-  var message;
-  while(message != 'bye'){
-    message = prompt("type your message:");
-    for(var i = 0; i < template.length; i++){
-      var temp = template[i];
-      var check = message.includes(temp);
-      if(check == true){
-        alert(response[i]);
+  this.message = "";
+  
+  this.start = function(){
+    //this method of the chatbot starts the conversation
+    while(this.message != 'bye'){
+      this.message = prompt("type your message:");
+      for(var i = 0; i < this.template.length; i++){
+        var temp = this.template[i];
+        var check = this.message.includes(temp);
+        if(check == true){
+          alert(this.responses[i]);
+        }
       }
     }
   }
-  var returnMessage = "this is "+name+" by "+creator;
-  return returnMessage
 }
 
-function Person(name, height){
-  this.name = name;
-  this.height = height;
-  var friends = ['livinus', 'prime'];
-  this.saySomething = function(something){
-    document.write(something);
-  }
-  this.sayName = function(){
-    document.write(this.name);
-  }
-  this.printStatus = function(){
-    var checker = checkName(this.name);
-    document.write(checker + " " + friends);
-  }
-  var checkName = function(check){
-    if(name == check){
-      return true;
-    }else{
-      return false
-    }
-  }
-}
-function Child(name, height){
-  this.cry = function(){
-    document.write("child is crying");
-  }
-  Person.call(this);
-}
-var person1 = new Person("Nwafor", 12);
-var person2 = new Child("Sandra", 9);
-person2.cry();
-person2.saySomething(" I am a child and also a person");
+var chat1 = new Chatbot('Jarvis', 'Iron man');
+//chat1.start();
+document.write(chat1.creator);
