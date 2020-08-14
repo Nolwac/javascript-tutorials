@@ -29,14 +29,11 @@ function Chatbot(name, creator="Google"){
 
 var chat1 = new Chatbot('Jarvis', 'Iron man');
 
-var num = 0;
-function printText(){
-  num++;
-  document.write("hello world" + num + "<br>");
-  
-  if(num>=12){
-    window.clearInterval(timer);
-  }
-  
-}
-var timer = window.setInterval(printText, 1000);
+var h1 = document.getElementById("title");
+h1.style.color="orange";
+h1.style.backgroundColor = 'green';//background-color
+var divs = document.getElementsByTagName("div");
+var innerDivs = document.getElementsByName("div-inner");
+console.log(innerDivs);
+divs[0].style.backgroundColor = "red";
+divs[1].style.color = 'green';
