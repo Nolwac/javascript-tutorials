@@ -29,11 +29,6 @@ function Chatbot(name, creator="Google"){
 
 var chat1 = new Chatbot('Jarvis', 'Iron man');
 
-var h1 = document.getElementById("title");
-h1.style.color="orange";
-h1.style.backgroundColor = 'green';//background-color
-var divs = document.getElementsByTagName("div");
-var innerDivs = document.getElementsByName("div-inner");
+var div = document.querySelectorAll('#title');
+var innerDivs = document.getElementsByClassName("inner");
 console.log(innerDivs);
-divs[0].style.backgroundColor = "red";
-divs[1].style.color = 'green';
