@@ -29,6 +29,8 @@ function Chatbot(name, creator="Google"){
 
 var chat1 = new Chatbot('Jarvis', 'Iron man');
 
-var div = document.querySelectorAll('#title');
-var innerDivs = document.getElementsByClassName("inner");
-console.log(innerDivs);
+var parent = document.getElementById('upper');
+var elem = document.createElement('div');
+elem.innerHTML = "This is a new html div element";
+parent.appendChild(elem);
+document.body.removeChild(parent);
