@@ -17,3 +17,4 @@ setInterval(function(){
 }, 100);
 
 chat1.start();
+chat2.start();

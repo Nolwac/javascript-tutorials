@@ -24,10 +24,22 @@ h1{
   width:100%;
   color:#777;
   background-color:white;
+  overflow:scroll;
 }
 .chat-button{
   background-color:green;
   color:white;
   height:60px;
   width:80px;
+}
+.text-message-recieve{
+  float:right;
+  margin-right:10px;
+}
+.text-message-send{
+  float:left;
+  margin-left:10px;
+}
+.chat-message{
+  min-height:30px;
 }
