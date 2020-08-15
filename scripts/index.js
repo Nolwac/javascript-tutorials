@@ -16,4 +16,4 @@ setInterval(function(){
   }
 }, 100);
 
-//chat1.start();
+chat1.start();

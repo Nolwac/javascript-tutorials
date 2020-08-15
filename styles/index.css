@@ -5,3 +5,29 @@ h1{
 .green-color{
   background-color:green;
 }
+.chat-body{
+  height: 500px;
+  width:350px;
+  color:crimson;
+  background-color:lightgrey;
+  padding:10px;
+}
+
+.chat-input{
+  width:150px;
+  height:60px;
+  border-color:crimson;
+}
+
+.message-box{
+  height: 300px;
+  width:100%;
+  color:#777;
+  background-color:white;
+}
+.chat-button{
+  background-color:green;
+  color:white;
+  height:60px;
+  width:80px;
+}
