@@ -1,9 +1,7 @@
 
-function writer(){
-  if(true){
-    let name = "Livinus Anayo";
-  }
-  return name;
+document.write(writer);
+
+let writer = function(){
+  document.write("Illustrating hoisting effect");
 }
 
-document.write(writer());
