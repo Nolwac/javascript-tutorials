@@ -24,8 +24,16 @@ function generator(){
   elem.style.backgroundColor = 'crimson';
   document.body.appendChild(elem);
   elem.onmouseover = function(){
-    elem.style.display = "none";
+    //elem.style.display = "none";
+    elem.style.width = '100px';
   }
+  elem.addEventListener('mouseover', function(){
+    elem.style.backgroundColor = 'orange';
+  });
 }
 generator();
-setInterval(function(){generator();}, 400);
+setInterval(function(){generator();}, 2000);
+//document.addEventListener('DOMContentLoaded', function(){document.write("loaded")})
+window.onload = function(){
+  document.write('window is loaded');
+}
