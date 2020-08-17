@@ -23,13 +23,16 @@ function generator(){
   elem.style.top = top+"px";
   elem.style.backgroundColor = 'crimson';
   document.body.appendChild(elem);
-  elem.onmouseover = function(){
-    //elem.style.display = "none";
+  function colorChanger(){
+    elem.style.backgroundColor = 'orange';
+  }
+  function widthChanger(){
     elem.style.width = '100px';
   }
-  elem.addEventListener('mouseover', function(){
-    elem.style.backgroundColor = 'orange';
-  });
+  elem.addEventListener('mouseover', widthChanger);
+  elem.addEventListener('mouseover', colorChanger);
+  elem.removeEventListener('mouseover', colorChanger);
+  elem.removeEventListener('mouseover', widthChanger);
 }
 generator();
 setInterval(function(){generator();}, 2000);
