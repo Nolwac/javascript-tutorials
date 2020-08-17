@@ -2,19 +2,13 @@
 var div = document.getElementById('upper');
 div.style.width = "50px";
 div.style.height = "50px";
-//document.write(div.classList);
-//div.setAttribute('class', 'green-color not-dummy');
-// div.removeAttribute('class');
-document.write(div.getAttribute('class'));
 
-setInterval(function(){
-  var attrib = div.getAttribute('class');
-  if(attrib.includes('green-color')){
-    div.setAttribute('class', 'dummy');
-  }else{
-    div.setAttribute('class', 'green-color');
-  }
-}, 100);
+function changeColor(elem){
+  elem.style.backgroundColor = 'red';
+}
 
-chat1.start();
-chat2.start();
+div.onclick = function(e){
+  div.style.backgroundColor = 'orange';
+}
+
+console.log(div);
