@@ -11,4 +11,21 @@ div.onclick = function(e){
   div.style.backgroundColor = 'orange';
 }
 
-console.log(div);
+function generator(){
+  var elem = document.createElement('div');
+  elem.style.width = "50px";
+  elem.style.height = "50px";
+  elem.style.position = 'absolute';
+  var left = Math.random()*window.innerWidth;
+  var top = Math.random()*window.innerHeight;
+  
+  elem.style.left = left+"px";
+  elem.style.top = top+"px";
+  elem.style.backgroundColor = 'crimson';
+  document.body.appendChild(elem);
+  elem.onmouseover = function(){
+    elem.style.display = "none";
+  }
+}
+generator();
+setInterval(function(){generator();}, 400);
