@@ -1,7 +1,7 @@
 
+function writers(surname, lastname, ...names){
+  console.log(names)
+  document.write(names)
+}
 
-
-let writer = (name) => "this is an arrow function and name is "+ name;
-
-
-document.write(writer("Livinus"));
+writers("Chinua Achebe", "Soyinka", "Chimammanda");
