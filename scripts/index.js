@@ -1,7 +1,7 @@
 
-document.write(writer);
 
-let writer = function(){
-  document.write("Illustrating hoisting effect");
-}
 
+let writer = (name) => "this is an arrow function and name is "+ name;
+
+
+document.write(writer("Livinus"));
