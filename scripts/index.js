@@ -18,6 +18,15 @@ class Employee extends Person{
   static saySomething(message){
     document.write(message);
   }
+  get fullInfo(){
+    return this.name + " " + this.salary
+  }
+  set setName(name){
+    this.name = name;
+  }
+  set setSalary(salary){
+    this.salary = salary;
+  }
 }
 
 class Executive extends Employee{
@@ -32,8 +41,7 @@ class Executive extends Employee{
 
 let employ1 = new Employee("Nwafor Livinus", 30, 200000);
 let ceo = new Executive("Onah Sochima", 30, 1000000, "Chief Executive Officer");
-ceo.getPaid();
-employ1.getPaid();
-Employee.saySomething("This will give an error");
-ceo.playRole();
+employ1.setName = "Nwafor Anayo";
+employ1.setSalary = 5000000;
+document.write(employ1.fullInfo);
 console.log(employ1);
