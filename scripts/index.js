@@ -1,11 +1,10 @@
-let names = ['prince', 'charles', 'nwafor', 'sandra'];
-let otherNames = ['solomon', 'henry', 'williams'];
+let array = [
+  ["Jane", "Prince"],
+  [1, 2, 3]
+  ];
 
-let fullList = [...names, ...otherNames];
-let info = {name:"Nwafor", age:20, height:2.3}
-let otherInfo = {firstName:"Livinus", country:"Nigeria"}
+let [[name1], [age, height]]=array;
 
-let fullInfo = {...info, ...otherInfo}
-
-console.log(fullInfo);
-console.log(fullList);
+document.write(name1)
+document.write(age);
+document.write(height);
