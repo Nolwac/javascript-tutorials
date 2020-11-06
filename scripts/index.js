@@ -1,3 +1,12 @@
-let name = "Nwafor Livinus";
-let height = 9.5;
-document.write(`my name is ${name} and my height is ${height}, don't touch me ${Math.abs(4-20)}`);
+let friends = ["Prince", "Kenneth", "Bruno", "Fred", "Paulinus", [ 1, 2, 3]];
+let person = {
+  name:"Livinus",
+  otherInfo:{
+    height:9.5,
+    country:"Nigeria"
+  }
+}
+
+//document.write(friends[6]?.[1])
+document.write(person.other?.height?.age)
+document.write("I ran")
