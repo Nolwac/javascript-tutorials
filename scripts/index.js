@@ -1,12 +1,4 @@
-var name = "Nwafor Livinus";
-function saySomething(something){
-  document.write(something);
-  window.fullName = "This is my full name";
+console.log(window.screen);
+window.screen.orientation.onchange = function(e){
+  document.write(window.screen.orientation.type)
 }
-
-document.write(window.innerWidth);
-document.write(window.innerHeight);
-var win = window.open('https://github.com', "_blank");
-setTimeout(function(){
-  win.close();
-}, 5000)
