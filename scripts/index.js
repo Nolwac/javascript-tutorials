@@ -1,24 +1,20 @@
-console.log(window.navigator)
-let but = document.createElement('button');
-but.innerHTML =  "copy";
-document.body.appendChild(but);
+//console.log(document.cookie);
+let expire = new Date();
+document.cookie = "height=2.3; expires="+expire.toUTCString();
+document.cookie = "country=Nigeria";
+document.cookie = "state=Ebonyi";
 
-but.onclick = function(e){
-  // window.navigator.geolocation.getCurrentPosition(function(obj){
-  //   console.log(obj)
-  // },
-  // function(obj){
-  //   console.log(obj);
-  //   console.log("attempt failed")
-  // });
-  //window.navigator.vibrate([500, 150, 500, 150, 500])
-  window.navigator.clipboard.writeText("Hello world");
+function getData(key){
+  let cookieString = document.cookie;
+  let keyValuePairs = cookieString.split("; ");//["username=Nwafor", "height=7.2"]
+  for(i=0; i<keyValuePairs.length; i++){
+    let pair = keyValuePairs[i];
+    let [pairKey, pairValue] = pair.split("=");//["username", "nwafor"]
+    if(pairKey==key){
+      return pairValue;
+    }
+  }
+  return null;
 }
-
-let but2 = document.createElement('button');
-but2.innerHTML =  "paste";
-document.body.appendChild(but2);
-
-but2.onclick = function(){
-  console.log(window.navigator.clipboard.readText())
-}
+console.log(getData("country"))
+console.log(document.cookie)
